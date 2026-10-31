@@ -1,0 +1,1835 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+.hide-import-first-nav > [data-name^="service"] > div:first-child {
+  display: none !important;
+}
+
+.hide-import-first-nav [data-name^="service"] > div:first-child {
+  display: none !important;
+}
+
+.hide-import-first-nav .service-import-inner > [data-name^="service"] > div:first-child {
+  display: none !important;
+}
+
+.hide-import-nav .service-import-inner > [data-name^="service"] > div.absolute.top-0 {
+  display: none !important;
+}
+
+.hide-import-nav [data-name^="service"] > div.absolute.top-0 {
+  display: none !important;
+}
+
+.hide-import-nav > div {
+  min-width: 0;
+}
+
+.hide-import-footer .service-import-inner > [data-name^="service"] > div:last-child {
+  display: none !important;
+}
+
+.hide-import-footer > [data-name^="service"] > div:last-child {
+  display: none !important;
+}
+
+.hide-import-footer .service-import-inner > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: none !important;
+}
+
+.hide-import-footer > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: none !important;
+}
+
+.glass-canopy-page.hide-import-footer .service-import-inner > [data-name^="service"] > div:nth-last-child(2) > div:last-child,
+.glass-canopy-page.hide-import-footer > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: flex !important;
+}
+
+.interior-glass-page.hide-import-footer .service-import-inner > [data-name^="service"] > div:nth-last-child(2) > div:last-child,
+.interior-glass-page.hide-import-footer > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: flex !important;
+}
+
+.aluminum-windows-page.hide-import-footer .service-import-inner > [data-name^="service"] > div:nth-last-child(2) > div:last-child,
+.aluminum-windows-page.hide-import-footer > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: flex !important;
+}
+
+.aluminium-door-page.hide-import-footer .service-import-inner > [data-name^="service"] > div:nth-last-child(2) > div:last-child,
+.aluminium-door-page.hide-import-footer > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: flex !important;
+}
+
+.glass-partition-page.hide-import-footer .service-import-inner > [data-name^="service"] > div:nth-last-child(2) > div:last-child,
+.glass-partition-page.hide-import-footer > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: flex !important;
+}
+
+.upvc-door-page.hide-import-footer .service-import-inner > [data-name^="service"] > div:nth-last-child(2) > div:last-child,
+.upvc-door-page.hide-import-footer > [data-name^="service"] > div:nth-last-child(2) > div:last-child {
+  display: flex !important;
+}
+
+.service-import-frame {
+  width: 100%;
+}
+
+.service-import-inner {
+  width: 100%;
+  transform-origin: top left;
+}
+
+@media (max-width: 768px) {
+  .service-hero-page.service-import-frame,
+  .glass-canopy-page.service-import-frame {
+    display: none;
+  }
+}
+
+.home-wallpaper-carousel {
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+}
+
+.home-wallpaper-track {
+  width: 500%;
+  animation: home-wallpaper-slide 20s ease-in-out infinite;
+}
+
+.home-wallpaper-slide {
+  width: 20%;
+}
+
+.home-load-fade {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: home-fade-in-up 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+.home-load-title {
+  animation-delay: 0.2s;
+}
+
+.home-load-intro {
+  animation-delay: 0.5s;
+}
+
+.home-load-actions {
+  animation-delay: 0.8s;
+}
+
+@keyframes home-fade-in-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-load-fade {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.section-contact-button {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.section-contact-button:hover {
+  background-color: #5a93d1;
+  border-color: #3f78b7;
+  box-shadow: 0 10px 24px rgba(63, 120, 183, 0.22);
+  transform: translateY(-1px);
+}
+
+.section-contact-button.about-contact-button {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.26);
+  border-color: rgba(255, 255, 255, 0.58);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.22),
+    0 14px 30px rgba(44, 104, 153, 0.18);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+}
+
+.section-contact-button.about-contact-button::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.58),
+    rgba(255, 255, 255, 0.1) 46%,
+    rgba(116, 177, 226, 0.22)
+  );
+  pointer-events: none;
+}
+
+.section-contact-button.about-contact-button > svg,
+.section-contact-button.about-contact-button > span {
+  position: relative;
+  z-index: 1;
+}
+
+.section-contact-button.about-contact-button:hover {
+  background: #5a93d1;
+  border-color: #3f78b7;
+  box-shadow: 0 10px 24px rgba(63, 120, 183, 0.22);
+}
+
+.navbar-contact-button {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.navbar-contact-button:hover {
+  background-color: #5a93d1;
+  border-color: #111;
+}
+
+.home-hero-contact-button {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 12px 28px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.contact-hero-touch-button {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.contact-hero-touch-button:hover {
+  background-color: #5a93d1;
+  border-color: #5a93d1;
+  color: #000;
+}
+
+.curtain-wall-page a[data-name="Button"][href="#/contact"],
+.curtain-wall-page a[data-name="Button"][href="#/projects"],
+.glass-canopy-page a[data-name="Button"][href="#/contact"],
+.glass-canopy-page a[data-name="Button"][href="#/projects"],
+.service-hero-page a[data-name="Button"][href="#/contact"],
+.service-hero-page a[data-name="Button"][href="#/projects"],
+.curtain-wall-hero-button {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.curtain-wall-page .curtain-wall-types-section > div {
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 650px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.curtain-wall-page .curtain-wall-types-heading {
+  justify-content: center !important;
+}
+
+.curtain-wall-page .curtain-wall-types-intro {
+  align-items: center !important;
+}
+
+.curtain-wall-page .curtain-wall-types-intro [data-name="Container"],
+.curtain-wall-page .curtain-wall-types-intro [data-name="Container"] > div {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.curtain-wall-page .curtain-wall-types-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 409px);
+  gap: 40px;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.curtain-wall-page .curtain-wall-core-section > div > div {
+  justify-content: center !important;
+  min-height: 490px;
+}
+
+.curtain-wall-page .curtain-wall-core-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 384px);
+  gap: 26px 136px;
+  height: auto !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.curtain-wall-page .curtain-wall-core-row {
+  display: contents !important;
+}
+
+.curtain-wall-page .curtain-wall-applications-section {
+  justify-content: center !important;
+  min-height: 650px;
+}
+
+.curtain-wall-page .curtain-wall-applications-grid > div > div {
+  display: grid !important;
+  grid-template-columns: repeat(4, 283px);
+  gap: 80px;
+  justify-content: center !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  width: 100% !important;
+}
+
+.curtain-wall-page .curtain-wall-intro-section {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.curtain-wall-page .curtain-wall-intro-content {
+  left: auto !important;
+  top: auto !important;
+  position: relative !important;
+  justify-content: center !important;
+}
+
+.curtain-wall-page .curtain-wall-advantages-section {
+  width: 100% !important;
+}
+
+.curtain-wall-page .curtain-wall-advantages-image {
+  left: calc(50% - 626px) !important;
+}
+
+.curtain-wall-page .curtain-wall-advantages-copy {
+  left: calc(50% + 4px) !important;
+}
+
+.curtain-wall-page .curtain-wall-why-section {
+  justify-content: center !important;
+  min-height: 550px;
+}
+
+.curtain-wall-page .curtain-wall-why-grid > div > div {
+  display: grid !important;
+  grid-template-columns: repeat(3, 320px);
+  gap: 70px 220px;
+  height: auto !important;
+  justify-content: center !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
+.curtain-wall-page .curtain-wall-why-row {
+  display: contents !important;
+}
+
+.glass-partition-page a[data-name="Button"][href="#/contact"] {
+  background-color: #5a93d1 !important;
+  box-shadow: none;
+}
+
+.glass-partition-page [data-name="Modern Glass Building"] > div:not([aria-hidden]) {
+  overflow: visible !important;
+}
+
+.glass-partition-page .glass-partition-spec-section {
+  align-items: center !important;
+}
+
+.glass-partition-page .glass-partition-spec-section > div > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-header,
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body {
+  width: 814px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: transparent !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-header {
+  background: #111828 !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-header > div > div {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr) !important;
+  gap: 24px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-family: "Inter", "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-header > div > div > div {
+  width: auto !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-header > div > div > div:last-child {
+  text-align: right;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) {
+  width: 814px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div {
+  width: 100% !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div > div.absolute.bg-white {
+  left: 0 !important;
+  top: 12px !important;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(220px, 1fr) minmax(320px, 1.35fr);
+  gap: 24px !important;
+  padding: 15px 20px !important;
+  text-align: left !important;
+  transition:
+    background 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div > div.absolute.bg-white:hover {
+  background: linear-gradient(90deg, #ffffff 0%, #eaf3fb 34%, #b8d4ee 68%, #4299f0 100%) !important;
+  box-shadow: 0 12px 26px rgba(66, 153, 240, 0.22);
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div > div.absolute.bg-white > div:not([aria-hidden="true"]) {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  font-family: "Inter", "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div > div.absolute.bg-white > div:not([aria-hidden="true"]) p {
+  line-height: normal !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div > div.absolute.bg-white > div:last-child {
+  text-align: right !important;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div > div.absolute.bg-white:hover > div[aria-hidden="true"] {
+  border-color: #4299f0;
+}
+
+.glass-partition-page .glass-partition-spec-section .glass-partition-spec-body > div:not(.glass-partition-spec-header) > div > div.absolute.bg-white:hover > div:last-child {
+  color: #0a3766;
+}
+
+.glass-partition-page .glass-partition-faq-panel {
+  box-shadow: 0 6px 10.5px rgba(66, 153, 240, 0.8);
+  overflow: visible;
+}
+
+.glass-partition-page .glass-partition-faq-item {
+  cursor: pointer;
+  transition:
+    height 260ms ease,
+    background-color 220ms ease,
+    transform 220ms ease;
+}
+
+.glass-partition-page .glass-partition-faq-item:hover,
+.glass-partition-page .glass-partition-faq-item:focus-within {
+  height: 104px !important;
+  background-color: #12365c;
+  transform: translateY(-2px);
+}
+
+.glass-partition-page .glass-partition-faq-answer {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.glass-partition-page .glass-partition-faq-answer > div:not([aria-hidden="true"]) {
+  text-align: left !important;
+  white-space: normal !important;
+  width: 100% !important;
+}
+
+.glass-partition-page .glass-partition-faq-answer p {
+  line-height: 1.45 !important;
+}
+
+.glass-partition-page .glass-partition-faq-item:hover .glass-partition-faq-answer,
+.glass-partition-page .glass-partition-faq-item:focus-within .glass-partition-faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.upvc-door-page .upvc-door-spec-section {
+  align-items: center !important;
+}
+
+.upvc-door-page .upvc-door-spec-section > div > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-header,
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body {
+  width: min(100%, 814px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: transparent !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-header {
+  background: #111828 !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-header > div > div {
+  display: grid !important;
+  grid-template-columns: minmax(220px, 1fr) minmax(320px, 1.35fr) !important;
+  gap: 24px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-family: "Inter", "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-header > div > div > div {
+  width: auto !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-header > div > div > div:last-child {
+  text-align: right;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) {
+  width: min(100%, 814px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div {
+  width: 100% !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div > div.absolute.bg-white {
+  left: 0 !important;
+  top: 12px !important;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(220px, 1fr) minmax(320px, 1.35fr);
+  gap: 24px !important;
+  padding: 15px 20px !important;
+  text-align: left !important;
+  transition:
+    background 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div > div.absolute.bg-white:hover {
+  background: linear-gradient(90deg, #ffffff 0%, #eaf3fb 34%, #b8d4ee 68%, #4299f0 100%) !important;
+  box-shadow: 0 12px 26px rgba(66, 153, 240, 0.22);
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div > div.absolute.bg-white > div:not([aria-hidden="true"]) {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  font-family: "Inter", "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div > div.absolute.bg-white > div:not([aria-hidden="true"]) p {
+  line-height: normal !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div > div.absolute.bg-white > div:last-child {
+  text-align: right !important;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div > div.absolute.bg-white:hover > div[aria-hidden="true"] {
+  border-color: #4299f0;
+}
+
+.upvc-door-page .upvc-door-spec-section .upvc-door-spec-body > div:not(.upvc-door-spec-header) > div > div.absolute.bg-white:hover > div:last-child {
+  color: #0a3766;
+}
+
+.upvc-door-page .upvc-door-faq-panel {
+  box-shadow: 0 6px 10.5px rgba(66, 153, 240, 0.8);
+  overflow: visible;
+}
+
+.upvc-door-page .upvc-door-faq-item {
+  cursor: pointer;
+  transition:
+    height 260ms ease,
+    background-color 220ms ease,
+    transform 220ms ease;
+}
+
+.upvc-door-page .upvc-door-faq-item:hover,
+.upvc-door-page .upvc-door-faq-item:focus-within {
+  height: 118px !important;
+  background-color: #12365c;
+  transform: translateY(-2px);
+}
+
+.upvc-door-page .upvc-door-faq-answer {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.upvc-door-page .upvc-door-faq-answer > div:not([aria-hidden="true"]) {
+  text-align: left !important;
+  white-space: normal !important;
+  width: 100% !important;
+}
+
+.upvc-door-page .upvc-door-faq-answer p {
+  line-height: 1.45 !important;
+}
+
+.upvc-door-page .upvc-door-faq-item:hover .upvc-door-faq-answer,
+.upvc-door-page .upvc-door-faq-item:focus-within .upvc-door-faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass-partition-page .glass-partition-hover-card,
+.glass-partition-page .glass-partition-application-card {
+  transition:
+    box-shadow 240ms ease,
+    transform 240ms ease;
+  will-change: transform;
+}
+
+.glass-partition-page .glass-partition-hover-card img,
+.glass-partition-page .glass-partition-application-card img {
+  transition:
+    filter 320ms ease,
+    transform 420ms ease;
+  will-change: transform;
+}
+
+.glass-partition-page .glass-partition-hover-card:hover,
+.glass-partition-page .glass-partition-application-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(17, 115, 212, 0.55),
+    0 12px 28px rgba(17, 115, 212, 0.24);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.glass-partition-page .glass-partition-hover-card:hover img,
+.glass-partition-page .glass-partition-application-card:hover img {
+  filter: saturate(1.06) brightness(1.02);
+  transform: scale(1.06);
+}
+
+.upvc-door-page .upvc-door-hover-card,
+.upvc-door-page .upvc-door-application-card {
+  overflow: hidden;
+  transition:
+    box-shadow 240ms ease,
+    transform 240ms ease;
+  will-change: transform;
+}
+
+.upvc-door-page .upvc-door-hover-card:first-child:last-child,
+.upvc-door-page .upvc-door-hover-card:first-child:nth-last-child(2),
+.upvc-door-page .upvc-door-hover-card:first-child:nth-last-child(2) ~ .upvc-door-hover-card {
+  max-width: 100%;
+}
+
+.upvc-door-page .upvc-door-hover-card:first-child:nth-last-child(2) {
+  margin-left: auto;
+}
+
+.upvc-door-page .upvc-door-hover-card:first-child:nth-last-child(2) ~ .upvc-door-hover-card {
+  margin-right: auto;
+}
+
+.upvc-door-page .upvc-door-hover-card:first-child:nth-last-child(2),
+.upvc-door-page .upvc-door-hover-card:first-child:nth-last-child(2) ~ .upvc-door-hover-card {
+  min-width: 0;
+}
+
+.upvc-door-page div:has(> .upvc-door-hover-card:first-child:nth-last-child(2)) {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: min(1120px, 100%) !important;
+}
+
+.upvc-door-page .upvc-door-hover-card > div:first-child {
+  overflow: hidden;
+}
+
+.upvc-door-page .upvc-door-hover-card {
+  width: clamp(320px, 42vw, 520px) !important;
+}
+
+.upvc-door-page .upvc-door-hover-card > div:first-child {
+  height: clamp(260px, 31vw, 370px) !important;
+}
+
+.upvc-door-page .upvc-door-hover-card > div:last-child > div {
+  align-items: center !important;
+  text-align: center;
+}
+
+.upvc-door-page .upvc-door-hover-card > div:last-child [data-name="Heading 3"] > div,
+.upvc-door-page .upvc-door-hover-card > div:last-child [data-name="Container"] > div {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.upvc-door-page .upvc-door-hover-card > div:last-child p {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.upvc-door-page .upvc-door-hover-card {
+  flex: 0 1 clamp(320px, 42vw, 520px) !important;
+}
+
+.upvc-door-page .upvc-door-hover-card:has(p) {
+  min-width: 0;
+}
+
+.upvc-door-page .upvc-door-hover-card:nth-child(2) {
+  margin-inline: 0 !important;
+}
+
+.upvc-door-page .upvc-door-hover-card img,
+.upvc-door-page .upvc-door-application-card img {
+  transition:
+    filter 320ms ease,
+    transform 420ms ease;
+  will-change: transform;
+}
+
+.upvc-door-page .upvc-door-hover-card:hover,
+.upvc-door-page .upvc-door-application-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(17, 115, 212, 0.55),
+    0 12px 28px rgba(17, 115, 212, 0.24);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.upvc-door-page .upvc-door-hover-card:hover img,
+.upvc-door-page .upvc-door-application-card:hover img {
+  filter: saturate(1.06) brightness(1.02);
+  transform: scale(1.06);
+}
+
+.upvc-door-page .upvc-sound-insulation-card > div:first-child {
+  background: #fff;
+}
+
+.upvc-door-page .upvc-sound-insulation-card > div:first-child img {
+  object-fit: cover !important;
+  object-position: 62% center !important;
+  padding: 0;
+  transform: none !important;
+}
+
+.upvc-door-page .upvc-sound-insulation-card:hover > div:first-child img {
+  transform: none !important;
+}
+
+.curtain-wall-page a[data-name="Button"][href="#/contact"]:hover,
+.glass-canopy-page a[data-name="Button"][href="#/contact"]:hover,
+.service-hero-page a[data-name="Button"][href="#/contact"]:hover,
+.curtain-wall-hero-consult:hover {
+  background-color: #ffffff !important;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.95);
+  transform: translate(-2px, -2px);
+}
+
+.curtain-wall-page a[data-name="Button"][href="#/projects"]:hover,
+.glass-canopy-page a[data-name="Button"][href="#/projects"]:hover,
+.service-hero-page a[data-name="Button"][href="#/projects"]:hover,
+.curtain-wall-hero-projects:hover {
+  background-color: #5a93d1 !important;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.95);
+  transform: translate(-2px, -2px);
+}
+
+.curtain-wall-page a[data-name="Button"]:hover p,
+.glass-canopy-page a[data-name="Button"]:hover p,
+.service-hero-page a[data-name="Button"]:hover p,
+.curtain-wall-hero-button:hover {
+  color: #000000 !important;
+}
+
+.glass-canopy-page .glass-canopy-spec-section > div > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.glass-canopy-page .glass-canopy-spec-section .glass-canopy-spec-header,
+.glass-canopy-page .glass-canopy-spec-section .glass-canopy-spec-body {
+  width: min(100%, 814px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.glass-canopy-page .glass-canopy-spec-section .glass-canopy-spec-header > div > div {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-align: left !important;
+}
+
+.glass-canopy-page .glass-canopy-spec-section .glass-canopy-spec-header > div > div > div:last-child {
+  text-align: right;
+}
+
+.glass-canopy-page .glass-canopy-spec-section .service-spec-row {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  left: 0 !important;
+  transform: none !important;
+}
+
+.glass-canopy-page .glass-canopy-spec-section .service-spec-row:hover {
+  transform: none !important;
+}
+
+.glass-canopy-page .glass-canopy-spec-section .service-spec-row > div:not([aria-hidden="true"]) {
+  min-width: 0;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+.glass-canopy-page .glass-canopy-spec-section .service-spec-row > div:last-child {
+  text-align: right !important;
+}
+
+.glass-canopy-page .glass-canopy-faq-panel {
+  overflow: visible;
+}
+
+.glass-canopy-page .glass-canopy-faq-item {
+  cursor: pointer;
+  box-shadow: 0 6px 10.5px rgba(66, 153, 240, 0.8);
+  transition:
+    height 260ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.glass-canopy-page .glass-canopy-faq-item:hover,
+.glass-canopy-page .glass-canopy-faq-item:focus-within {
+  height: 118px !important;
+  background-color: #12365c !important;
+  box-shadow: 0 18px 34px rgba(10, 37, 64, 0.22);
+  transform: translateY(-2px);
+}
+
+.glass-canopy-page .glass-canopy-faq-answer {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.glass-canopy-page .glass-canopy-faq-answer > div:not([aria-hidden="true"]) {
+  text-align: left !important;
+  white-space: normal !important;
+  width: 100% !important;
+}
+
+.glass-canopy-page .glass-canopy-faq-answer p {
+  line-height: 1.45 !important;
+}
+
+.glass-canopy-page .glass-canopy-faq-item:hover .glass-canopy-faq-answer,
+.glass-canopy-page .glass-canopy-faq-item:focus-within .glass-canopy-faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.interior-glass-page .interior-glass-spec-section > div > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.interior-glass-page .interior-glass-spec-section .interior-glass-spec-header,
+.interior-glass-page .interior-glass-spec-section .interior-glass-spec-body {
+  width: min(100%, 814px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.interior-glass-page .interior-glass-spec-section .interior-glass-spec-header > div > div {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-align: left !important;
+}
+
+.interior-glass-page .interior-glass-spec-section .interior-glass-spec-header > div > div > div:last-child {
+  text-align: right;
+}
+
+.interior-glass-page .interior-glass-spec-section .service-spec-row {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  left: 0 !important;
+  transform: none !important;
+}
+
+.interior-glass-page .interior-glass-spec-section .service-spec-row:hover {
+  transform: none !important;
+}
+
+.interior-glass-page .interior-glass-spec-section .service-spec-row > div:not([aria-hidden="true"]) {
+  min-width: 0;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+.interior-glass-page .interior-glass-spec-section .service-spec-row > div:last-child {
+  text-align: right !important;
+}
+
+.interior-glass-page .interior-glass-faq-panel {
+  box-shadow: 0 6px 10.5px rgba(66, 153, 240, 0.8);
+  overflow: visible;
+}
+
+.interior-glass-page .interior-glass-faq-item {
+  cursor: pointer;
+  transition:
+    height 260ms ease,
+    background-color 220ms ease,
+    transform 220ms ease;
+}
+
+.interior-glass-page .interior-glass-faq-item:hover,
+.interior-glass-page .interior-glass-faq-item:focus-within {
+  height: 112px !important;
+  background-color: #12365c;
+  transform: translateY(-2px);
+}
+
+.interior-glass-page .interior-glass-faq-item-tall:hover,
+.interior-glass-page .interior-glass-faq-item-tall:focus-within {
+  height: 150px !important;
+}
+
+.interior-glass-page .interior-glass-faq-item-sheet:hover,
+.interior-glass-page .interior-glass-faq-item-sheet:focus-within {
+  height: 230px !important;
+}
+
+.interior-glass-page .interior-glass-faq-answer {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.interior-glass-page .interior-glass-faq-answer > div:not([aria-hidden="true"]) {
+  text-align: left !important;
+  white-space: normal !important;
+  width: 100% !important;
+}
+
+.interior-glass-page .interior-glass-faq-answer p {
+  line-height: 1.45 !important;
+}
+
+.interior-glass-page .interior-glass-faq-item:hover .interior-glass-faq-answer,
+.interior-glass-page .interior-glass-faq-item:focus-within .interior-glass-faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section > div > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-header,
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-body {
+  width: min(100%, 814px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-header > div > div {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-align: left !important;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-header > div > div > div:last-child {
+  text-align: right;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-body > div > div.absolute.bg-white {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  left: 0 !important;
+  transform: none !important;
+  transition:
+    background 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-body > div > div.absolute.bg-white:hover {
+  background: linear-gradient(90deg, #ffffff 0%, #eaf3fb 34%, #b8d4ee 68%, #4299f0 100%);
+  box-shadow: 0 12px 26px rgba(66, 153, 240, 0.22);
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-body > div > div.absolute.bg-white > div:not([aria-hidden="true"]) {
+  min-width: 0;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-body > div > div.absolute.bg-white > div:last-child {
+  text-align: right !important;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-body > div > div.absolute.bg-white:hover > div[aria-hidden="true"] {
+  border-color: #4299f0;
+}
+
+.aluminum-windows-page .aluminum-windows-spec-section .aluminum-windows-spec-body > div > div.absolute.bg-white:hover > div:last-child {
+  color: #0a3766;
+}
+
+.aluminum-windows-page .aluminum-windows-faq-panel {
+  box-shadow: 0 6px 10.5px rgba(66, 153, 240, 0.8);
+  overflow: visible;
+}
+
+.aluminum-windows-page .aluminum-windows-faq-item {
+  cursor: pointer;
+  transition:
+    height 260ms ease,
+    background-color 220ms ease,
+    transform 220ms ease;
+}
+
+.aluminum-windows-page .aluminum-windows-faq-item:hover,
+.aluminum-windows-page .aluminum-windows-faq-item:focus-within {
+  height: 104px !important;
+  background-color: #12365c;
+  transform: translateY(-2px);
+}
+
+.aluminum-windows-page .aluminum-windows-faq-answer {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.aluminum-windows-page .aluminum-windows-faq-answer > div:not([aria-hidden="true"]) {
+  text-align: left !important;
+  white-space: normal !important;
+  width: 100% !important;
+}
+
+.aluminum-windows-page .aluminum-windows-faq-answer p {
+  line-height: 1.45 !important;
+}
+
+.aluminum-windows-page .aluminum-windows-faq-item:hover .aluminum-windows-faq-answer,
+.aluminum-windows-page .aluminum-windows-faq-item:focus-within .aluminum-windows-faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aluminium-door-page .aluminium-door-spec-section > div > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-header,
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-body {
+  width: min(100%, 814px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-header > div > div {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-align: left !important;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-header > div > div > div:last-child {
+  text-align: right;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-body > div > div.absolute.bg-white {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px;
+  left: 0 !important;
+  transform: none !important;
+  transition:
+    background 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-body > div > div.absolute.bg-white:hover {
+  background: linear-gradient(90deg, #ffffff 0%, #eaf3fb 34%, #b8d4ee 68%, #4299f0 100%);
+  box-shadow: 0 12px 26px rgba(66, 153, 240, 0.22);
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-body > div > div.absolute.bg-white > div:not([aria-hidden="true"]) {
+  min-width: 0;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-body > div > div.absolute.bg-white > div:last-child {
+  text-align: right !important;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-body > div > div.absolute.bg-white:hover > div[aria-hidden="true"] {
+  border-color: #4299f0;
+}
+
+.aluminium-door-page .aluminium-door-spec-section .aluminium-door-spec-body > div > div.absolute.bg-white:hover > div:last-child {
+  color: #0a3766;
+}
+
+.aluminium-door-page .aluminium-door-faq-panel {
+  box-shadow: 0 6px 10.5px rgba(66, 153, 240, 0.8);
+  overflow: visible;
+}
+
+.aluminium-door-page .aluminium-door-faq-item {
+  cursor: pointer;
+  transition:
+    height 260ms ease,
+    background-color 220ms ease,
+    transform 220ms ease;
+}
+
+.aluminium-door-page .aluminium-door-faq-item:hover,
+.aluminium-door-page .aluminium-door-faq-item:focus-within {
+  height: 118px !important;
+  background-color: #12365c;
+  transform: translateY(-2px);
+}
+
+.aluminium-door-page .aluminium-door-faq-answer {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.aluminium-door-page .aluminium-door-faq-answer > div:not([aria-hidden="true"]) {
+  text-align: left !important;
+  white-space: normal !important;
+  width: 100% !important;
+}
+
+.aluminium-door-page .aluminium-door-faq-answer p {
+  line-height: 1.45 !important;
+}
+
+.aluminium-door-page .aluminium-door-faq-item:hover .aluminium-door-faq-answer,
+.aluminium-door-page .aluminium-door-faq-item:focus-within .aluminium-door-faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.acp-cladding-page .acp-spec-section {
+  align-items: center !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body {
+  background: transparent !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div {
+  width: 814px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-header {
+  width: 814px !important;
+  background: #111828 !important;
+  border-radius: 10px 10px 0 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-header > div > div {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px !important;
+  padding: 10px 20px !important;
+  color: #ffffff !important;
+  font-family: "Roboto:Medium", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-header > div > div > div {
+  width: auto !important;
+  height: auto !important;
+  justify-content: center !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-header > div > div > div:last-child {
+  text-align: right;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-header p {
+  line-height: 40px !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div > div:not(.acp-spec-header) {
+  width: 100% !important;
+  background: #ffffff !important;
+  transition:
+    background 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div > div:not(.acp-spec-header):hover {
+  background: linear-gradient(90deg, #ffffff 0%, #eaf3fb 34%, #b8d4ee 68%, #4299f0 100%) !important;
+  box-shadow: 0 12px 26px rgba(66, 153, 240, 0.22);
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div > div:not(.acp-spec-header):hover > div[aria-hidden="true"] {
+  border-color: #4299f0;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div > div:not(.acp-spec-header) > div:not([aria-hidden="true"]) > div {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 1.35fr);
+  gap: 24px !important;
+  padding: 20px !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div > div:not(.acp-spec-header) > div:not([aria-hidden="true"]) > div > div {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div > div:not(.acp-spec-header) > div:not([aria-hidden="true"]) > div > div:last-child {
+  text-align: right !important;
+}
+
+.acp-cladding-page .acp-spec-section .acp-spec-body > div > div:not(.acp-spec-header):hover > div:not([aria-hidden="true"]) > div > div:last-child {
+  color: #0a3766;
+}
+
+.acp-cladding-page .acp-faq-card {
+  transition:
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.acp-cladding-page .acp-faq-card:hover,
+.acp-cladding-page .acp-faq-card:focus-within {
+  background-color: #12365c !important;
+  box-shadow: 0 18px 34px rgba(10, 37, 64, 0.22);
+  transform: translateY(-2px);
+}
+
+.acp-cladding-page .acp-faq-button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  height: 40px !important;
+  padding: 0;
+  text-align: left;
+  transition: height 260ms ease;
+}
+
+.acp-cladding-page .acp-faq-card:hover .acp-faq-button,
+.acp-cladding-page .acp-faq-card:focus-within .acp-faq-button {
+  height: 118px !important;
+}
+
+.acp-cladding-page .acp-faq-answer {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.acp-cladding-page .acp-faq-answer p {
+  line-height: 1.45 !important;
+}
+
+.acp-cladding-page .acp-faq-card:hover .acp-faq-answer,
+.acp-cladding-page .acp-faq-card:focus-within .acp-faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.acp-cladding-page .acp-type-card {
+  transition:
+    background-color 240ms ease,
+    box-shadow 240ms ease,
+    transform 240ms ease;
+  will-change: transform;
+}
+
+.acp-cladding-page .acp-type-card img {
+  transition:
+    filter 320ms ease,
+    transform 420ms ease;
+  will-change: transform;
+}
+
+.acp-cladding-page .acp-type-card:hover {
+  background-color: #ffffff;
+  box-shadow:
+    0 0 0 1px rgba(17, 115, 212, 0.55),
+    0 12px 28px rgba(17, 115, 212, 0.24);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.acp-cladding-page .acp-type-card:hover img {
+  filter: saturate(1.06) brightness(1.02);
+  transform: scale(1.06);
+}
+
+.acp-cladding-page .acp-application-card,
+.acp-cladding-page .acp-portfolio-card {
+  transition:
+    box-shadow 240ms ease,
+    transform 240ms ease;
+  will-change: transform;
+}
+
+.acp-cladding-page .acp-application-card {
+  overflow: hidden;
+}
+
+.acp-cladding-page .acp-application-card [data-name="Overlay+Shadow"] {
+  transition:
+    box-shadow 240ms ease,
+    transform 240ms ease;
+}
+
+.acp-cladding-page .acp-application-card [data-name="Overlay"] {
+  transition:
+    background-color 240ms ease,
+    transform 240ms ease;
+}
+
+.acp-cladding-page .acp-portfolio-card img {
+  transition:
+    filter 320ms ease,
+    transform 420ms ease;
+  will-change: transform;
+}
+
+.acp-cladding-page .acp-application-card:hover,
+.acp-cladding-page .acp-portfolio-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(17, 115, 212, 0.55),
+    0 12px 28px rgba(17, 115, 212, 0.24);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.acp-cladding-page .acp-application-card:hover [data-name="Overlay+Shadow"] {
+  box-shadow: none;
+}
+
+.acp-cladding-page .acp-application-card:hover [data-name="Overlay"] {
+  background-color: rgba(0, 123, 255, 0.14);
+  transform: scale(1.06);
+}
+
+.acp-cladding-page .acp-portfolio-card:hover img {
+  filter: saturate(1.06) brightness(1.02);
+  transform: scale(1.06);
+}
+
+.acp-cladding-page [data-name="Components"] [data-name="List"] {
+  width: 100%;
+}
+
+.acp-cladding-page [data-name="Components"] [data-name="Item"] {
+  width: 100%;
+  min-width: 0;
+}
+
+.acp-cladding-page [data-name="Components"] [data-name="Item"] [data-name="Container"] {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100%;
+}
+
+.acp-cladding-page [data-name="Components"] [data-name="Item"] [data-name="Container"] > div {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100%;
+  height: auto !important;
+  white-space: normal !important;
+}
+
+.acp-cladding-page [data-name="Components"] [data-name="Item"] p {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.acp-cladding-page [data-name="Components"] + div {
+  width: min(540px, 100%) !important;
+  gap: 22px !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:first-child {
+  gap: 8px !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:first-child > div:first-child {
+  width: 100% !important;
+  min-width: 0 !important;
+  font-size: 26px !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:first-child > div:first-child p {
+  line-height: 1.25 !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:first-child > div:last-child {
+  font-size: 17px !important;
+  width: 100% !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:first-child > div:last-child p {
+  line-height: 1.45 !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child {
+  gap: 14px !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child > div {
+  gap: 0 !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child > div > div:first-child {
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child > div > div:first-child > div:last-child {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  font-size: 20px !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child > div > div:first-child > div:last-child p {
+  line-height: 1.3 !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child > div > div:last-child {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding: 6px 10px 6px 34px !important;
+  width: 100% !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child > div > div:last-child > div {
+  width: 100% !important;
+  min-width: 0 !important;
+  font-size: 17px !important;
+}
+
+.acp-cladding-page [data-name="Components"] + div > div:last-child > div > div:last-child p {
+  line-height: 1.45 !important;
+}
+
+.home-hero-intro {
+  position: relative;
+  padding: 26px 30px 26px 34px;
+  background: linear-gradient(90deg, rgba(12, 28, 54, 0.78), rgba(11, 30, 58, 0.56));
+  border: 1px solid rgba(90, 147, 209, 0.18);
+  border-left: 5px solid #489ef6;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 18px 40px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.section-image-zoom .section-image-zoom-media {
+  transition: transform 450ms ease;
+  will-change: transform;
+}
+
+.section-image-zoom:hover .section-image-zoom-media {
+  transform: scale(1.08);
+}
+
+.service-application-card {
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.service-application-card > div[aria-hidden="true"] {
+  transition: border-color 220ms ease;
+}
+
+.service-application-card img {
+  transition: transform 320ms ease;
+}
+
+.service-application-card:hover {
+  background-color: #e7f3ff;
+  border-color: #1173d4;
+  box-shadow: 0 18px 38px rgba(66, 153, 240, 0.3);
+  transform: translateY(-8px);
+}
+
+.service-application-card:hover > div[aria-hidden="true"] {
+  border-color: #1173d4;
+}
+
+.service-application-card:hover img {
+  transform: scale(1.04);
+}
+
+.service-key-component-card {
+  overflow: visible;
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.service-key-component-card > div[aria-hidden="true"] {
+  transition: border-color 220ms ease;
+}
+
+.service-key-component-card:hover {
+  background-color: rgba(122, 174, 204, 0.7);
+  box-shadow: 0 16px 28px rgba(66, 153, 240, 0.45);
+  transform: translateY(-1px);
+}
+
+.service-key-component-card:hover > div[aria-hidden="true"] {
+  border-color: #bfe5ff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.interior-type-card {
+  transition:
+    box-shadow 240ms ease,
+    transform 240ms ease;
+}
+
+.interior-type-card img {
+  transition: transform 360ms ease;
+}
+
+.interior-type-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(191, 229, 255, 0.85),
+    0 0 24px rgba(66, 153, 240, 0.8),
+    0 18px 34px rgba(10, 37, 64, 0.24);
+  transform: translateY(-8px);
+}
+
+.interior-type-card:hover img {
+  transform: scale(1.04);
+}
+
+.service-spec-row {
+  transition:
+    background 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.service-spec-row > div[aria-hidden="true"] {
+  transition: border-color 220ms ease;
+}
+
+.service-spec-row:hover {
+  background: linear-gradient(90deg, #ffffff 0%, #eaf3fb 34%, #b8d4ee 68%, #4299f0 100%);
+  box-shadow: 0 12px 26px rgba(66, 153, 240, 0.22);
+  transform: translateX(4px);
+}
+
+.service-spec-row:hover > div[aria-hidden="true"] {
+  border-color: #4299f0;
+}
+
+.service-spec-row:hover > div:last-child {
+  color: #0a3766;
+}
+
+.specializations-carousel-track {
+  animation: specializations-wallpaper-scroll 36s linear infinite;
+  will-change: transform;
+}
+
+.specializations-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes home-wallpaper-slide {
+  0%,
+  16% {
+    transform: translateX(0);
+  }
+
+  20%,
+  36% {
+    transform: translateX(-20%);
+  }
+
+  40%,
+  56% {
+    transform: translateX(-40%);
+  }
+
+  60%,
+  76% {
+    transform: translateX(-60%);
+  }
+
+  80%,
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes specializations-wallpaper-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-wallpaper-track {
+    animation: none;
+  }
+
+  .specializations-carousel-track {
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    min-height: 580px !important;
+    height: 580px !important;
+  }
+
+  .home-hero-content {
+    justify-content: center !important;
+    padding: 48px 20px !important;
+    text-align: center;
+  }
+
+  .home-hero-copy {
+    align-items: center;
+    max-width: 340px !important;
+    gap: 22px !important;
+  }
+
+  .home-hero-title {
+    align-items: center;
+    width: 100%;
+  }
+
+  .home-hero-title span {
+    width: 100%;
+    font-size: clamp(34px, 10vw, 44px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0 !important;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .home-hero-copy > p {
+    width: 100%;
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0 !important;
+    text-align: center;
+  }
+
+  .home-hero-intro {
+    padding: 18px 18px 18px 22px;
+    border-left-width: 4px;
+    text-align: left !important;
+  }
+
+  .home-hero-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px !important;
+  }
+
+  .home-hero-actions a {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px !important;
+  }
+
+  .about-hero {
+    min-height: 580px !important;
+  }
+
+  .about-hero-content {
+    min-height: 580px;
+    align-items: center;
+    justify-content: center;
+    gap: 22px !important;
+    padding: 48px 20px !important;
+    text-align: center;
+  }
+
+  .about-hero-title {
+    width: 100%;
+    max-width: 340px !important;
+  }
+
+  .about-hero-title h1 {
+    font-size: clamp(32px, 9vw, 42px) !important;
+    line-height: 1.16 !important;
+    letter-spacing: 0 !important;
+    text-align: center;
+  }
+
+  .about-hero-copy {
+    width: 100%;
+    max-width: 340px !important;
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0 !important;
+    text-align: center;
+  }
+
+  .about-hero-actions {
+    width: 100%;
+    max-width: 340px;
+    flex-direction: column;
+    gap: 12px !important;
+  }
+
+  .about-hero-actions a {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px !important;
+  }
+
+  .hide-import-nav {
+    overflow-x: hidden;
+  }
+
+  .hide-import-nav > [data-name^="service"] {
+    width: 1341px !important;
+    max-width: none !important;
+    min-width: 1341px !important;
+    transform-origin: top left;
+  }
+
+  .service-import-scale {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .service-import-scale .service-import-inner {
+    width: 1341px !important;
+    max-width: none !important;
+    min-width: 1341px !important;
+    transform-origin: top left;
+  }
+}
